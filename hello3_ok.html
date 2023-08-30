@@ -1,0 +1,36 @@
+<!-- <!doctype html>
+<html>
+<head>
+    <script src="./hello3.js"></script>
+    <script>
+        document.querySelector(".mybutton").addEventListener("click", function () {
+            alert("Please check console now.");
+            var result = Module.ccall(
+                "myFunction", // name of C function
+                null, // return type
+                null, // argument types
+                null,
+            ); // arguments
+        });
+    </script>
+</head>
+<body>
+    <button class="mybutton">Run myFunction</button>
+</body>
+
+</html> -->
+
+
+<button class="mybutton">Run myFunction</button>
+<script src="./hello3.js"></script>
+<script>
+    document.querySelector(".mybutton").addEventListener("click", function () {
+        alert("Please check console now.");
+        var result = Module.ccall(
+            "myFunction", // name of C function
+            null, // return type
+            null, // argument types
+            null,
+        ); // arguments
+    });
+</script>
